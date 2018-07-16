@@ -3,6 +3,7 @@
 - hosts: localhost
   tasks:
   - git:
-      repo: 'https://github.com/harishchanderdalal/AWS.git'
-      dest: /home/deployment
+      repo: 'https://github.com/harishchanderdalal/ansible.git'
+      dest: /home/deployment/
       refspec: '+refs/pull/*:refs/heads/*'
+      version: "{{BRANCH}}"

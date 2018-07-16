@@ -1,9 +1,9 @@
 ---
 
-hosts: all
-tasks:
+- hosts: localhost
+  tasks:
   - name: Git Clone Frontend REPO
     git: >
       repo: 'https://github.com/harishchanderdalal/AWS.git'
-      dest: /src/ansible-examples
+      dest: /home/deployment
       refspec: '+refs/pull/*:refs/heads/*'
